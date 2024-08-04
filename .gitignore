@@ -9,3 +9,8 @@ Debug*/Debug*\ Libs
 *.rbuistate
 *.xojo_uistate
 *.obsolete*
+
+venv/
+*.pyc
+__pycache__/
+db.sqlite3
