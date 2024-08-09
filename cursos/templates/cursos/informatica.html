@@ -39,5 +39,13 @@
     <h1>Informática</h1>
     <h2>Melhor curso</h2>
     <a href="{% url 'index' %}">Clique aqui para voltar</a>
+    <ul>
+        <h1> ALUNES </h1>
+        {% for curso in curso %}
+            <li>Alune: {{ curso.nome }},  Idade:  {{ curso.idade }},  Matricula:  {{ curso.matricula }}</li>
+        {% endfor %}
+    </ul>
+    
+
 </body>
 </html>

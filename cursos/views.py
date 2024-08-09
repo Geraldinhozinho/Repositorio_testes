@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from .models import Curso
 # Create your views here.
 
 
@@ -7,7 +7,11 @@ def index(request):
     return render(request, 'cursos/index.html')
 
 def informatica(request):
-    return render(request, 'cursos/informatica.html')
+    cursos = Curso.objects.all()
+    contexto = {
+        'curso': cursos
+    }
+    return render(request, 'cursos/informatica.html',contexto)
 
 
 def alimentos(request):
