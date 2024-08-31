@@ -1,0 +1,42 @@
+.img{
+    max-width: 400px;
+    height: 350px; /* Define uma altura fixa */
+    object-fit:fill; /* Ajusta a imagem para cobrir o contêiner, cortando se necessário */
+    display: block;
+}
+.tit{
+    color: blue;
+    font-size: 30px;
+}
+.nome {
+    max-width: 600px; /* Define a largura máxima do container */
+    text-align: justify; /* Justifica o texto */
+    background-color: rgb(175, 175, 175); /* Cor de fundo */
+    border-radius: 4%; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    margin-left: 20px; /* Centraliza o container */
+}
+
+/* Estilo da descrição */
+.des {
+    margin-bottom: 40px; /* Espaço inferior */
+    max-width: 100%; /* Garante que o texto não ultrapasse a largura do container pai */
+    overflow-wrap: break-word; /* Quebra as palavras longas para evitar o overflow */
+}
+
+.but{
+    text-decoration: none;
+    background-color: chartreuse;
+    padding: 10px;
+    font-size: large;
+    border-radius: 4%;
+
+}
+
+.but:hover{
+    background-color: brown;
+}
+
+.geral{
+    display: flex;
+}

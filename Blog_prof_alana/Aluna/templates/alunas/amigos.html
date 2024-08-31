@@ -1,0 +1,32 @@
+{% extends 'alunas/base.html' %}
+{% load static %}
+{% block parte_central %}
+        <!-- Page header with logo and tagline-->
+        <header>
+            <div class="header-container">
+                <div class="header-content">
+                    <h1>Welcome to Blog Home!</h1>
+                    <p>A Bootstrap 5 starter layout for your next blog homepage</p>
+                </div>
+            </div>
+        </header>
+        <!-- Page content-->
+                <!-- Blog entries -->
+        <div >
+            {% for infor in lista3 %}
+                <div class="geral">
+                    <div class="img">
+                        {% if infor.image %}
+                            <img class="polaroid-img" src="{{ infor.image.url }}" alt="Featured Post Image" />
+                        {% endif %}
+                    </div>
+                    <div class="nome" >
+                        <h2 class="tit">{{ infor.nome }}</h2>
+                        <p class="des" >{{ infor.descricao }}</p>
+                        <a href="{% url 'index' %}" class="but">Voltar para a tela inicial →</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>        
+{% endblock %}
+

@@ -1,0 +1,65 @@
+/* Estilo da barra de navegação */
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Estilo do logo */
+.logo {
+    height: 40px; /* Ajuste a altura conforme necessário */
+}
+
+/* Estilo dos links de navegação */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Estilo dos itens da lista */
+.nav-links li {
+    margin: 0;
+}
+
+/* Estilo dos links */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efeito ao passar o mouse sobre os links */
+.nav-links a:hover {
+    background-color: #555;
+    color: #ddd;
+}
+
+
+
+/* Rodapé */
+footer {
+    background-color: #343a40; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto */
+}
+
+footer .container {
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Ajuste para a parte central do conteúdo */
+div {
+    padding: 1rem;
+}

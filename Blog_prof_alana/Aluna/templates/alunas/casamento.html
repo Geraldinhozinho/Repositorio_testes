@@ -1,0 +1,49 @@
+{% extends 'alunas/base.html' %}
+{% load static %}
+{% block parte_central %}
+
+    <header>
+        <div class="header-container">
+            <div class="header-content">
+                <h1>Welcome to Blog Home!</h1>
+                <p>A Bootstrap 5 starter layout for your next blog homepage</p>
+            </div>
+        </div>
+    </header>
+    <!-- Page content-->
+            <!-- Blog entries -->
+            <div class="fotodes">
+                {% for infor in lista4 %}
+                    <div class="polaroid">
+                        <img class="polaroid-img" src="{% static 'image/Alana K.jpeg' %}" alt="Featured Post Image" />
+                        <p class="polaroid-description">{{ infor.descricao }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+            
+            <div class="event-details1">
+                {% for infor in lista4 %}
+                    <h2 class="polaroid-title1">{{ infor.local }}</h2>
+                    <p class="event-time1">Às {{ infor.hora }}</p>
+                {% endfor %}
+            </div>
+            
+            <h1 class="h"> Convidados</h1>
+
+            <ul class="convidados-lista">
+                {% for infor in lista5 %}
+                    <li class="convidado-item">
+                        {% if infor.image %}
+                            <div class="image-container">
+                                <img class="image" src="{{ infor.image.url }}" alt="{{ infor.nome }}">
+                            </div>
+                        {% endif %}
+                        <p class="convidado-nome">{{ infor.nome }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+            
+
+            <a class="polaroid-btn" href="{% url 'index' %}">Voltar para a tela inicial →</a>
+
+{% endblock %}
